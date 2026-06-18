@@ -63,7 +63,7 @@ public class Arvore {
 		}
 		if (nome.compareToIgnoreCase(raiz.getNome()) == 0) {
 			return raiz;
-		} else if (nome.compareToIgnoreCase(raiz.getNome()) <= 0) {
+		} else if (nome.compareToIgnoreCase(raiz.getNome()) < 0) {
 			return buscar(raiz.getEsquerda(), nome);
 		} else {
 			return buscar(raiz.getDireita(), nome);
