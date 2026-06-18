@@ -120,9 +120,9 @@ public class Arvore {
 		if (raiz == null) {
 			return;
 		} else {
-			System.out.print(raiz.toString() + " -> ");
-			ordemAlfabetica(raiz.getEsquerda());
-			ordemAlfabetica(raiz.getDireita());
+			System.out.print("-> " + raiz.toString());
+			preOrdem(raiz.getEsquerda());
+			preOrdem(raiz.getDireita());
 		}
 	}
 
@@ -130,9 +130,9 @@ public class Arvore {
 		if (raiz == null) {
 			return;
 		} else {
-			ordemAlfabetica(raiz.getEsquerda());
-			ordemAlfabetica(raiz.getDireita());
-			System.out.print(raiz.toString() + " -> ");
+			posOrdem(raiz.getEsquerda());
+			posOrdem(raiz.getDireita());
+			System.out.print("-> " + raiz.toString());
 		}
 	}
 
